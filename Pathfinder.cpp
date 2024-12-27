@@ -94,23 +94,17 @@ namespace AStar {
         _start = start;
         _end = end;
 
-        // Sometimes the program just crashes here while releasing the memory from the maps.
-        // It's not immediately apparent why that happens, so I can't be bothered to fix it.
-        // It could be some form of bad combination of manipulations to the maps
+        _closedSet.clear();
 
-        _gScore = {};
-        _fScore = {};
-        _cameFrom = {};
-        _openSetResidency = {};
-
-        // Fill maps with initial data
+        // Fill maps with initial data. 
+        // Taking advantage of the indexing operator that either creates or accesses the value at the key.
 
         for (short x = 0; x < _area.Width(); ++x) {
             for (short y = 0; y < _area.Height(); ++y) {
-                _gScore.emplace(Vector2{ x, y }, std::numeric_limits<double>::infinity());
-                _fScore.emplace(Vector2{ x, y }, std::numeric_limits<double>::infinity());
-                _cameFrom.emplace(Vector2{ x, y }, Vector2{ -10, -10 });
-                _openSetResidency.emplace(Vector2{ x, y }, false);
+                _gScore[{ x, y }] = std::numeric_limits<double>::infinity();
+                _fScore[{ x, y }] = std::numeric_limits<double>::infinity();
+                _cameFrom[{ x, y }] = Vector2{ -10, -10 };
+                _openSetResidency[{ x, y }] = false;
             }
         }
 
@@ -153,6 +147,17 @@ namespace AStar {
     }
 
     auto Pathfinder::DistanceToEnd(const Vector2 &tile) const noexcept -> double {
+        // Manhattan distance converges faster to the path,
+        // but euclidean distance produces more interesting paths.
+
+        // Manhattan distance
+
         return std::abs(tile.X - _end.X) + std::abs(tile.Y - _end.Y);
+
+        // Euclidean distance
+
+        /*short dx = tile.X - _end.X;
+        short dy = tile.Y - _end.Y;
+        return sqrt(dx * dx + dy * dy);*/
     }
 } // namespace AStar
