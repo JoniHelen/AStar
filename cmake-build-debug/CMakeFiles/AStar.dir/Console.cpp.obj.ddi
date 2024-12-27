@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\AStar.dir\\Console.cpp.obj",
+            "outputs": [
+                "C:\\Users\\Fujitsu\\CLionProjects\\AStar\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\AStar.dir\\Console.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

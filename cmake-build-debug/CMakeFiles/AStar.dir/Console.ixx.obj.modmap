@@ -1,0 +1,3 @@
+-interface
+-ifcOutput CMakeFiles\AStar.dir\AStar-Console.ifc
+-reference AStar:FatPointer=CMakeFiles\AStar.dir\AStar-FatPointer.ifc

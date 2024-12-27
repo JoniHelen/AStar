@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\AStar.dir\\Console.cpp.obj",
+            "outputs": [
+                "CMakeFiles\\AStar.dir\\Console.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

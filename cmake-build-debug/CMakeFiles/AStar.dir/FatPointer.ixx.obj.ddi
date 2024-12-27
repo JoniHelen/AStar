@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\AStar.dir\\FatPointer.ixx.obj",
+            "outputs": [
+                "C:\\Users\\Fujitsu\\CLionProjects\\AStar\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\AStar.dir\\FatPointer.ixx.obj.ddi",
+                "AStar-FatPointer.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "AStar:FatPointer",
+                    "source-path": "c:\\users\\fujitsu\\clionprojects\\astar\\fatpointer.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

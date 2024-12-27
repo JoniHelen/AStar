@@ -1,0 +1,11 @@
+# ninja log v5
+35	2629	7570196345327117	CMakeFiles/AStar.dir/Area.cpp.obj	edac9327b422b564
+11	2635	7570196345327117	CMakeFiles/AStar.dir/Console.cpp.obj	22fe60c0f6834520
+3	3518	7570196354240830	CMakeFiles/AStar.dir/main.cpp.obj	102f976fb15bc28f
+18	3975	7570196358775971	CMakeFiles/AStar.dir/Pathfinder.cpp.obj	2a3ca65b75be92f3
+3975	5850	7570196377311357	AStar.exe	4ddb91b4dc023e2a
+125	2854	7570233812004066	CMakeFiles/AStar.dir/Area.cpp.obj	edac9327b422b564
+4	3912	7570233822595226	CMakeFiles/AStar.dir/main.cpp.obj	102f976fb15bc28f
+11	4254	7570233826040324	CMakeFiles/AStar.dir/Console.cpp.obj	22fe60c0f6834520
+19	4466	7570233828150147	CMakeFiles/AStar.dir/Pathfinder.cpp.obj	2a3ca65b75be92f3
+4466	6069	7570233843588548	AStar.exe	4ddb91b4dc023e2a

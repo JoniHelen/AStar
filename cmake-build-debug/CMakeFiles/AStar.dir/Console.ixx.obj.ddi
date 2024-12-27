@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\AStar.dir\\Console.ixx.obj",
+            "outputs": [
+                "C:\\Users\\Fujitsu\\CLionProjects\\AStar\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\AStar.dir\\Console.ixx.obj.ddi",
+                "AStar-Console.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "AStar:Console",
+                    "source-path": "c:\\users\\fujitsu\\clionprojects\\astar\\console.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "AStar:FatPointer"
+                }
+            ]
+        }
+    ]
+}
